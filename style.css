@@ -1,0 +1,328 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 20 de set. de 2024, 16:33:39
+    Author     : Julian
+/*ESTILO DA INTERFACE GERAL */ 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+body{
+    background-color: black;
+    height: 100vh;
+}
+.interface{
+    max-width: 1280px;
+    margin:0 auto;
+}
+
+.flex{
+    display: flex;
+} 
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: green;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;  
+}
+.interface .titulo{
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    font-weight: 300;
+}
+.titulo {  
+    font-family: monospace; /* Fonte que simula digitação */  
+    display: inline-block; /* Para permitir animação de largura */  
+    overflow: hidden; /* Oculta texto não exibido */  
+    border-right: 2px solid blue; /* Simula o cursor */  
+    white-space: nowrap; /* Impede quebras de linha */  
+    animation: typing 8s steps(30, end) infinite alternate, blink 0.8s step-end infinite; /* Animações */  
+}  
+
+@keyframes typing {  
+    0% {  
+        width: 0; /* Começa escondido */  
+    }  
+    50% {  
+        width: 100%; /* Exibe o texto completo */  
+    }  
+    100% {  
+        width: 0; /* Após atingir o comprimento total, oculta novamente */  
+    }  
+}  
+
+@keyframes blink {  
+    50% {  
+        border-color: transparent; /* Oculta o cursor */  
+    }  
+}     
+button:hover{
+    box-shadow: 0px 0px 50px green;
+    transform: scale(1.05);
+    transition: .2s; 
+}
+/*ESTILO DO CABEÇALHO */ 
+header{
+    padding: 40px 4%;
+}
+header > .interface{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+header a{  
+    position: relative; /* Necessário para o posicionamento do pseudo-elemento */  
+}  
+
+header a {  
+    color: green; /* Cor do texto do link */  
+    text-decoration: none; /* Remove o sublinhado do link */  
+    display: inline-block;   
+    position: relative; /* Necessário para o pseudo-elemento */  
+    padding: 5px 0; /* Espaçamento para dar espaço à barra */  
+}  
+
+header a:hover {  
+    color: green; /* Mantém a cor ao passar o mouse */  
+}  
+
+header a::after {  
+    content: "";  
+    position: absolute;  
+    left: 0; /* Alinha a barra à esquerda do link */  
+    bottom: -5px; /* Ajusta a posição para ficar logo abaixo do link */  
+    width: 100%; /* A barra inicia com a largura total do link */  
+    height: 3px; /* Altura da barra */  
+    background: greenyellow; /* Cor da barra cinza */  
+    transform: scaleX(0); /* Inicia como invisível */  
+    transition: transform 0.3s ease; /* Animação suave */  
+}  
+
+header a:hover::after {  
+    transform: scaleX(1); /* A barra se expande em 100% ao passar o mouse */  
+}  
+
+header nav ul {  
+    list-style-type: none;  
+    padding: 0; /* Remove padding que pode afetar a lista */  
+    margin: 0; /* Remove margin que pode afetar a lista */  
+}  
+
+header nav ul li {  
+    display: inline-block;  
+    padding: 0 40px; /* Espaçamento lateral entre os itens */  
+    font-size: 20px; /* Tamanho da fonte */  
+}  
+/* ESTILO TOPO DO SITE*/
+section.topo-do-site{
+    padding: 40px 4%; 
+}
+section.topo-do-site.flex{
+ align-items: center;
+ justify-content: center;
+ gap: 90px;
+}
+.topo-do-site h1{
+    color: white;
+    font-size: 42px;
+    line-height: 40px;
+}
+.topo-do-site.txt-topo-site h1 span{
+    color: green;
+}
+.topo-do-site.txt-topo-site p{
+    color: white;
+    margin: 40px 0;
+}
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+@keyframes flutuar{
+    0%{
+        top:0;
+    }
+    100%{
+        top:30px;
+    }
+}
+/*ESTILO Das ESPECIALIDADES */
+section.especialidades{
+    padding: 40px 4%;
+}
+section.especialidades .flex{
+    gap: 60px;
+}
+.especialidades .especialidades-box{
+color: white;
+padding: 40px;
+border-radius: 20px;
+margin-top: 45px;
+transition: .2s;
+}
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px white;
+}
+.especialidades .especialidades-box i{
+    font-size: 58px;
+    color: green;    
+}
+.especialidades .especialidades-box h3 {
+    font-size: 26px;
+    margin: 15px 0;
+}
+/*ESTILO SOBRE */
+section.sobre{
+    padding: 40px 4%;
+}
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+.sobre.txt-sobre{
+    color: white;
+}
+.sobre .txt-sobre h2{
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;  
+    color: white;
+}
+.sobre .txt-sobre h2 span{
+    color: green;
+    display: block;
+}
+.sobre .txt-sobre h2 span{
+ font-size: 34px;
+ font-weight: 600;
+ min-width: 280px
+}
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+    color: white;
+}
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 60%;
+    border: none;
+    background-color: green;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 6px;
+    transition: .10s
+}
+/*ESTILO portifolio */
+section.portifolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px; color: red;
+}
+section.portifolio .flex{
+    justify-content: space-around;
+}
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 2s;
+    cursor: pointer;
+    border-radius: 20px;
+    position: relative;
+}
+.img-port :hover{
+    background-position: 100% 100%;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+    opacity: 0;
+    transition: 2s;
+}
+.overlay:hover{
+    opacity: 1;
+}
+
+/*ESTILO DO FORMULARIO*/
+section .formulario{
+    padding: 88px 4%;
+}
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+form input,form textArea{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: green;
+    font-size: 18px;      
+}
+form textArea{
+  resize: none;
+  max-height: 200px;
+}
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+form .btn-enviar input{
+    width: 120px;
+   
+    font-weight: 700;
+    cursor: pointer;
+       
+}
+/* ESTILO DO RODA PÉ */   
+footer {  
+    padding: 60px 4%;  
+    background-image: url('imagens/casinoonline2.jpeg'); /* Substitua pelo caminho da sua imagem */  
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */  
+    background-position: center; /* Centraliza a imagem */  
+    color: white; /* Mudamos a cor do texto para branco para melhor contraste com a imagem */    
+}    
+footer .flex {  
+    display: flex;   
+    justify-content: space-between;  
+}  
+
+footer .line-footer {  
+    padding: 28px 0;  
+    border-bottom: 2px solid gold; /* Mudamos a cor da borda para ouro, criando uma associação a cassinos */  
+}  
+
+footer .line-footer p i {  
+    color: gold; /* Cor dourada para os ícones de fogo */  
+    font-size: 24px;  
+}  
+
