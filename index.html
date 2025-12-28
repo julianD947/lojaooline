@@ -28,183 +28,125 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
     <title> agência only.genesis</title>
 </head>
 <body>
- <header>
-    <div class="interface"> <!--interface  --> 
+<header class="py-3 bg-light">
+    <div class="container d-flex justify-content-between align-items-center"> 
+        <div class="logo">
+            <a href="#">
+                <img src="imagens/logocasino.jpg" alt="Logo da Loja Only Genesis Moda" width="180" height="120">
+            </a>  
+        </div>
         
-     <div class="logo"> <!--logo -->
-      <a href="#">
-       <img src="imagens/logocasino.jpg"alt="" width="250px" height="200px" logo da agencia">
-      </a>  
-     </div><!-- fim logo -->
-     
-     <nav class="menu desktop"><!--navegação do menu -->
-      <ul>
-       <li> <a href="#"></a> </li>
-       <li> <a href="#"></a> </li>
-       <li> <a href="#"></a> </li>
-       <li> <a href="#"></a> </li>
-      </ul>
-     </nav> <!--fim da navegação do menu -->
-     
-     <div class="btn-contato"><!--botao do contato-->
-      <a href="#">
-       <button> contato</button>
-      </a>
-     </div><!-- fim do botao contato-->
-    </div> <!-- fim interface  -->
+        <nav class="menu desktop">
+            <ul class="d-flex list-unstyled mb-0">
+                <li class="mx-3"><a href="#">Coleções</a></li>
+                <li class="mx-3"><a href="#">Moda Feminina</a></li>
+                <li class="mx-3"><a href="#">Moda Masculina</a></li>
+                <li class="mx-3"><a href="#">Contato</a></li>
+            </ul>
+        </nav>
         
- </header>
-<main>
-      
- <section class="topo-do-site"><!--começo da minha classe top-do-site-->
-  <div class="interface"> <!--começo da interface top-do-site-->
-   <div class="flex">
-    <div class="txt-topo-site">
-        
-                    <h1> TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL <span>.</span></h1>
-                    <P></P>
-                    
-     <div class="btn-contato">
-      <a href="#">
-       <button>entre em contato</button>
-      </a>   
-     </div>
+        <div class="btn-contato">
+            <a href="#"><button class="btn btn-primary">Loja Online</button></a>
+        </div>
     </div>
-     <div class="img-topo-site">
-      <img src = "imagens/casino51.jpg" alt=" " width="250px" height="200px">                      
-     </div>
-   </div>
-  </div><!--fim da interface top-do-site-->
- </section><!--fim do topo do site-->
-            
- <section class="especialidades"><!--começo da minha section especialidades-->
-  <div class="interface"><!--começo da minha interface especialidades-->
-  
-   <div class="titulo"><!--começo da minha div especialidades com javascrip-->
-   <script>  
-    const frases = [  
-        "Impulsionamento de Conteúdo",
-        "automatização para whatsapp",
-        "desenvolvimento de sistemas",  
-        "Desenvolvimento de Web Sites",
-        "Desenvolvimento de aplicativos mobile",
-        "Marketing Digital"  
-    ];  
+</header>
 
-    let index = 0;  
-    const tituloElement = document.querySelector('.titulo');  
-
-    function atualizarTitulo() {  
-        tituloElement.textContent = frases[index];  
-
-        // Alterar a frase para a próxima  
-        index = (index + 1) % frases.length; // Volta ao primeiro índice após o último  
-
-        // Reiniciar a animação  
-        tituloElement.style.animation = 'none'; // Para reiniciar a animação  
-        void tituloElement.offsetWidth; // Força a reflow  
-        tituloElement.style.animation = ''; // Reinicia a animação  
-
-        setTimeout(atualizarTitulo, 8000); // Atualiza a frase a cada 8 segundos  
-    }  
-
-    // Inicializa com a primeira frase ao carregar a página  
-   atualizarTitulo();  
-  </script> <!--titulo minha especialidade-->
- </div>   <!--minha especialidade-->
-<div class="flex"><!--começo da minha classe flex-->
-      
-    <div class="especialidades-box">
-        
-     <i class="bi bi-code-square"></i>
-                            <h3> website</h3>
-                            <p>Está pronto para impulsionar seu negócio? Somos especialistas em criar websites personalizados que realmente atraem e mantêm clientes. Oferecemos soluções completas Trabalhamos lado a lado com você para entender suas necessidades e desenvolver um site que represente a verdadeira essência da sua marca. E não se preocupe,porque nossos serviços vão além da criação,incluímos manutenção e suporte contínuos para que você</p>
-                        
-    </div><!--fim da classe especialidades-box-->
-      
-   <div class="especialidades-box">
-     <i class="bi bi-cart"></i>
-                            <h3> loja online</h3>
-                            <p>Transforme Seu Negócio com uma Loja Virtual Personalizada,Você está preparado para expandir seu negócio e alcançar novos clientes? Com o nosso serviço de desenvolvimento de loja virtual,você terá a oportunidade de levar seus produtos para o mundo online de maneira eficiente e atraente.</p>
-                        
-   </div><!--fim da classe especialidades-box-->
-      
-   <div class="especialidades-box">
-     <i class="bi bi-whatsapp"></i>
-                            <h3>serviços WhatsApp</h3>
-                            <p>Quer aumentar suas vendas de forma simples? Nossa automatização do WhatsApp faz isso por você! Responda seus clientes rapidamente e mantenha uma comunicação clara e eficaz.Aproveite melhor seu tempo e ofereça um atendimento excepcional.Transforme a experiência dos seus clientes hoje mesmo.</p>
-                        
-   
-   </div><!--fim da classe especialidades-box--> 
-  </div><!--fim da classe flex -->
-  
- </div><!--fim da interface-->
-                
-</section> <!--fim da section especialidade-->
-<section class="sobre"><!--inicio da minha section sobre os projetos do portifolio-->
-    <div class="interface"><!--inicio da minha interface do portifolio-->
-        <div class="flex">
-            <div class="img-sobre">
-                <img src="imagens/casino50.jpg" alt=" " width="250px" height="200px">
-            </div>
-            <div class="txt-sobre">
-                <h2> muito prazer, me chamo <span> julian cesar </span></h2>
-                <p>aqui esta meu portfólio de apresentação ,de alguns projetos que ja desenvolvi</p>
-                <p></p>
-                <div class="btn-social">
-                    <a href="#"><button> <i class="bi bi-youtube"></i> </button></a>
-                    <a href="#"><button> <i class="bi bi-instagram"></i> </button></a>
-                    <a href="#"><button> <i class="bi bi-whatsapp"></i> </button></a>
-                </div><!--btn-socil-->
-            </div><!--txt-sobre-->   
-        </div><!--flex-->
-    </div><!--interface-->
-</section><!--sobre-->
-<section class="portifolio"><!--section imagens do portifolio-->
-    <div class="interface"><!--interface das imagens do portifolio-->
-        <h2 class="titulo">MEUS PROJETOS</h2><!--titulo do meu portifolio-->
-        <div class="flex">
-            <div class="img-port" style="background-image: url(imagens/roleta1.jpg);">
-                <div class="overlay"> projeto 1</div>
-            </div>
-            <div class="img-port" style="background-image: url(imagens/roleta1.jpg);">
-                <div class="overlay"> projeto 2</div>
-            </div>
-            <div class="img-port" style="background-image:url(imagens/roleta1.jpg);">
-                <div class="overlay"> projeto 3</div>
+<main>
+<section class="topo-do-site py-5">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="txt-topo-site">
+            <h1>Transformando Estilo em Realidade <span>.</span></h1>
+            <p>Moda que combina com você. Roupas modernas, confortáveis e cheias de personalidade.</p>
+            <div class="btn-contato mt-3">
+                <a href="#"><button class="btn btn-success">Conheça nossa coleção</button></a>   
             </div>
         </div>
+        <div class="img-topo-site">
+            <img src="imagens/casino51.jpg" alt="Imagem destaque da loja" width="300" height="200">                      
+        </div>
+    </div>
+</section>
             
-    </div><!--fim da interface das imagens do portifolio-->
-</section><!--fim da section imagens do portifolio-->
-<section class="formulario"><!--inicio do meu formulario-->
-    <div class="interface"><!--inicio doa minha interface-->
-       <h2 class="titulo"> mande uma mensagen para nossa equipe</h2> 
-       <form action="">
-    <input type="text" name="" id="" placeholder="nome da sua empresa" required="">
-    <input type="text" name="" id="" placeholder="seu email" required="">
-    <input type="text" name="" id="" placeholder="número de whatsapp">
-    <textarea name="" id="" placeholder="deixe sua mensagem para agilizarmos o processo"></textarea>
-    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
-</form>
+<section class="especialidades py-5">
+    <div class="container">
+        <h2 class="titulo text-center mb-4">Nossas Especialidades</h2>
+        <div class="d-flex justify-content-around flex-wrap">
+            <div class="especialidades-box text-center p-3">
+                <i class="bi bi-bag fs-1"></i>
+                <h3>Moda Feminina</h3>
+                <p>Peças exclusivas que valorizam sua beleza e estilo. Do casual ao sofisticado, temos opções para todas as ocasiões.</p>
+            </div>
+            <div class="especialidades-box text-center p-3">
+                <i class="bi bi-person fs-1"></i>
+                <h3>Moda Masculina</h3>
+                <p>Roupas modernas e confortáveis para homens que querem se vestir bem sem abrir mão da praticidade.</p>
+            </div>
+            <div class="especialidades-box text-center p-3">
+                <i class="bi bi-stars fs-1"></i>
+                <h3>Acessórios</h3>
+                <p>Complete seu look com bolsas, cintos, colares e muito mais. Detalhes que fazem toda a diferença.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="sobre py-5 bg-light">
+    <div class="container d-flex align-items-center">
+        <div class="img-sobre me-4">
+            <img src="imagens/casino50.jpg" alt="Foto da loja" width="250" height="200">
+        </div>
+        <div class="txt-sobre">
+            <h2>Muito prazer, somos a <span>Only Genesis Moda</span></h2>
+            <p>Uma loja pensada para quem ama se vestir bem e expressar sua personalidade através da moda. Aqui você encontra roupas e acessórios que acompanham as últimas tendências.</p>
+            <div class="btn-social mt-3">
+                <a href="#"><button class="btn btn-danger"><i class="bi bi-youtube"></i></button></a>
+                <a href="#"><button class="btn btn-warning"><i class="bi bi-instagram"></i></button></a>
+                <a href="#"><button class="btn btn-success"><i class="bi bi-whatsapp"></i></button></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="portifolio py-5">
+    <div class="container">
+        <h2 class="titulo text-center mb-4">Nossas Coleções</h2>
+        <div class="d-flex justify-content-around flex-wrap">
+            <div class="img-port" style="background-image: url(imagens/colecao1.jpg); width:250px; height:200px; background-size:cover; margin:10px;">
+                <div class="overlay text-white text-center bg-dark bg-opacity-50">Coleção Verão</div>
+            </div>
+            <div class="img-port" style="background-image: url(imagens/colecao2.jpg); width:250px; height:200px; background-size:cover; margin:10px;">
+                <div class="overlay text-white text-center bg-dark bg-opacity-50">Coleção Inverno</div>
+            </div>
+            <div class="img-port" style="background-image:url(imagens/colecao3.jpg); width:250px; height:200px; background-size:cover; margin:10px;">
+                <div class="overlay text-white text-center bg-dark bg-opacity-50">Coleção Casual</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="formulario py-5 bg-light">
+    <div class="container">
+        <h2 class="titulo text-center mb-4">Fale com nossa equipe</h2> 
+        <form action="" class="d-flex flex-column align-items-center">
+            <input type="text" name="nome" placeholder="Seu nome" required class="form-control mb-3 w-50">
+            <input type="email" name="email" placeholder="Seu email" required class="form-control mb-3 w-50">
+            <input type="tel" name="whatsapp" placeholder="Número de WhatsApp" class="form-control mb-3 w-50">
+            <textarea name="mensagem" placeholder="Deixe sua mensagem ou peça informações sobre nossos produtos" class="form-control mb-3 w-50"></textarea>
+            <div class="btn-enviar">
+                <input type="submit" value="Enviar" class="btn btn-primary">
+            </div>
+        </form>
     </div>
 </section>
 </main>
-    <footer> 
-        <div classe="interface"> 
-            <div classe="line-footer">
-                <div class="flex"> 
-                        <div classe="logo-footer">
-                    <img src="imagens/poker1.jpg" alt="" width="250px" height="200px"> 
-                </div><!--logo-footer-->
-           </div><!--btn-socil-->
-        </div><!--line-footer-->
-        </div><!--fim interface roda pé-->
-        <div class="line-footer">
-            <p><i class="bi bi-fire"></i> </a></p>
-        </div><!--line-footer-->
-    </footer>
-    
-    
+
+<footer class="py-4 bg-dark text-white text-center"> 
+    <div class="container">
+        <div class="logo-footer mb-3">
+            <img src="imagens/poker1.jpg" alt="Logo do rodapé" width="200" height="150"> 
+        </div>
+        <p><i class="bi bi-fire"></i> Only Genesis Moda - Todos os direitos reservados</p>
+    </div>
+</footer>
 </body>
 </html>
